@@ -1,0 +1,27 @@
+Notes:
+
+
+
+Bugs:
+
+- check if there player is on last level! 
+
+TO DO:
+
+- do now:
+
+	- make it possible to win each round (done)
+
+	- menu
+
+- maybe do later:
+
+	- add more levels
+
+	- graphics
+
+	- death bricks
+
+	- time score?
+
+	- as a final screen, show player stats, will also prevent last level bug
