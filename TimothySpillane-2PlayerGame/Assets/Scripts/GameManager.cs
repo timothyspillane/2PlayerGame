@@ -19,26 +19,12 @@ public class GameManager : MonoBehaviour
         }
         if(null == GameObject.FindWithTag("Box"))
         {
-            Debug.Log("You Won!");
             Victory();
-
         }
     }
     private void Victory()
     {
         WinPanel.SetActive(true);
         Time.timeScale = 0f;
-    }
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene("Menu");
-    }
-    public void LoadNextLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // When you get to the last level, a bug will occur
-    }
-    public void Replay()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(transform.position.y <= -100)
-        {
-            Debug.Log("box destroyed");
+        if (collision.CompareTag("Box Destroyer"))
+         {
             Destroy(gameObject);
         }
     }

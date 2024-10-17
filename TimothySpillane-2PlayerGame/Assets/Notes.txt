@@ -10,18 +10,16 @@ TO DO:
 
 - do now:
 
-	- make it possible to win each round (done)
-
-	- menu
-
-- maybe do later:
+	- time score (star calculation)
 
 	- add more levels
+
+- maybe do later:
 
 	- graphics
 
 	- death bricks
 
-	- time score?
-
 	- as a final screen, show player stats, will also prevent last level bug
+
+	- particles!
