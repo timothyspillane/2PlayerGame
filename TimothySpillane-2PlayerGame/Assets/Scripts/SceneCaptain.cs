@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneCaptain : MonoBehaviour
 {
-    public void LoadScenebyName(string sceneName)
+    public void LoadScenebyName(string sceneName) // load the scene that I put in the inspector
     {
         SceneManager.LoadScene(sceneName);
     }
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // When you get to the last level, a bug will occur
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // load the next level on the build
     }
     public void Replay()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // reload the scene
     }
 }

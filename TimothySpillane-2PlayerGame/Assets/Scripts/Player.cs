@@ -22,21 +22,21 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(playerUp))
+        if (Input.GetKey(playerUp))// jump input
         {
             LayerMask layers = LayerMask.GetMask("Ground");
             RaycastHit2D cast = Physics2D.Raycast(transform.position, Vector2.down, .61f, layers);
-            if (cast)
+            if (cast)// if there is ground .61 units below, you can jump
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             }
             
         }
-        if (Input.GetKey(playerRight))
+        if (Input.GetKey(playerRight))// if player inputs right, move right
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
         }
-        if (Input.GetKey(playerLeft))
+        if (Input.GetKey(playerLeft))// if player inputs left, move left
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
         }

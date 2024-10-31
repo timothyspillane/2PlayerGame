@@ -4,15 +4,11 @@ Notes:
 
 Bugs:
 
-- check if there player is on last level! 
 
 TO DO:
 
 - do now:
 
-	- time score (star calculation)
-
-	- add more levels
 
 - maybe do later:
 
@@ -20,6 +16,4 @@ TO DO:
 
 	- death bricks
 
-	- as a final screen, show player stats, will also prevent last level bug
-
-	- particles
+	- more levels

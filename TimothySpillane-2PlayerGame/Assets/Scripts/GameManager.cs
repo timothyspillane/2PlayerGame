@@ -23,11 +23,11 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.R)) // reload the scene when you press R
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if(null == GameObject.FindWithTag("Box"))
+        if(null == GameObject.FindWithTag("Box"))// if there are no boxes, run Victory
         {
             Victory();
         }
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         int seconds;
         int miliseconds;
         
-        elapsedTime = Time.time - startTime;
+        elapsedTime = Time.time - startTime; // timer code
         minutes = (int)elapsedTime / 60;
         seconds = (int)elapsedTime % 60;
         miliseconds = (int)(elapsedTime * 10) % 10;
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     }
     private void Victory()
     {
-        if(elapsedTime < timeGoal)
+        if(elapsedTime < timeGoal)// if you beat the game fast enough spawn all the stars
         {
             star1.SetActive(true);
             star2.SetActive(true);
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         {
             star1.SetActive(false);
         }
-        WinPanel.SetActive(true);
+        WinPanel.SetActive(true);// show win panel
         Time.timeScale = 0f;
     }
 }
