@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Box
   - Box Destroyer
+  - deathbrick
   layers:
   - Default
   - TransparentFX

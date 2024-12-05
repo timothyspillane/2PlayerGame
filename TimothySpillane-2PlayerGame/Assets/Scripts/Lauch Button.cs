@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class LauchButton : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class LauchButton : MonoBehaviour
     {
         if (collision.CompareTag("Player") || collision.CompareTag("Box"))
         {
-            collision.GetComponent<Rigidbody2D>();
+            collision.GetComponent<Rigidbody2D>().AddForce(lauchDirection, ForceMode2D.Impulse);
         }
     }
    

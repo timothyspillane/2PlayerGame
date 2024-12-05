@@ -4,14 +4,9 @@ Notes:
 
 Bugs:
 
-- Player cant jump when gravity is flipped
-
-- LuanchPad script isnt finished
-
 TO DO:
 
 - do now:
-
 
 - maybe do later:
 
@@ -20,12 +15,3 @@ TO DO:
 	- death bricks
 
 	- more levels
-
-	- special platforms
-		- moving platforms
-		- jump pads WIP
-		- gravity swap X
-	- lever switches
-		- opens up a new path for the other player
-		- removes/adds a platform
-			
