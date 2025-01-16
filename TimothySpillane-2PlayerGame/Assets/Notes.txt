@@ -7,11 +7,15 @@ Bugs:
 TO DO:
 
 - do now:
+	ASK ABOUT LISTS
+	
+	- point saving
+		- +1 point for every star you get (you can get the same star as a point multiple times)
+	- shop where you can spend points
+		- buy cosmetics like setting an image or color to your character
 
 - maybe do later:
 
 	- graphics
-
-	- death bricks
 
 	- more levels

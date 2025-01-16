@@ -11,15 +11,22 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text timeUI;
     [SerializeField] float timeGoal;
     private float startTime, elapsedTime;
+    private string KeyName;
 
     // Update is called once per frame
     private void Awake()
     {
         Time.timeScale = 1f;
+        if(!PlayerPrefs.HasKey("Points") || SceneManager.GetActiveScene().name == "Level1")
+        {
+            PlayerPrefs.SetInt("Points", 0);
+        }
     }
     private void Start()
     {
         startTime = Time.time;
+        Debug.Log(PlayerPrefs.GetInt("Points"));
+       
     }
     void Update()
     {
@@ -45,17 +52,23 @@ public class GameManager : MonoBehaviour
     }
     private void Victory()
     {
+        if (WinPanel.activeSelf) { return; }
+
         if(elapsedTime < timeGoal)// if you beat the game fast enough spawn all the stars
         {
             star1.SetActive(true);
             star2.SetActive(true);
             star3.SetActive(true);
+            PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") + 3);
         } else if(elapsedTime < timeGoal*2)
         {
             star1.SetActive(true);
             star3.SetActive(true);
-        } else
+            PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") + 2);
+        }
+        else
         {
+            PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") + 1);
             star1.SetActive(false);
         }
         WinPanel.SetActive(true);// show win panel

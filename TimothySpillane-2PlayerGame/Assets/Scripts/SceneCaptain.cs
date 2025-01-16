@@ -7,6 +7,7 @@ public class SceneCaptain : MonoBehaviour
 {
     public void LoadScenebyName(string sceneName) // load the scene that I put in the inspector
     {
+        print("loading by name");
         SceneManager.LoadScene(sceneName);
     }
     public void LoadNextLevel()
