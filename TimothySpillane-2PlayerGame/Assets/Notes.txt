@@ -7,8 +7,7 @@ Bugs:
 TO DO:
 
 - do now:
-	ASK ABOUT LISTS
-	
+APPLY COSMETICS	
 	- point saving
 		- +1 point for every star you get (you can get the same star as a point multiple times)
 	- shop where you can spend points

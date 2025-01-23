@@ -33,6 +33,16 @@ public class PointManager : MonoBehaviour
             Debug.Log("Item1Bought");
         }
     }
+    public void Button2()
+    {
+        if (!cosmeticOwned[1] && PlayerPrefs.GetInt("Points") >= cosmeticCost[1])
+        {
+            PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") - 1);
+            PointText.text = $"{PlayerPrefs.GetInt("Points")} Points";
+            cosmeticOwned[1] = true;
+            Debug.Log("Item2Bought");
+        }
+    }
     void Save()
     {
         // save comsmetic owned array
@@ -61,7 +71,7 @@ public class PointManager : MonoBehaviour
             }
             if (c == 0)
             {
-
+                cosmeticOwned.Add(false);
             }
         }
     }
