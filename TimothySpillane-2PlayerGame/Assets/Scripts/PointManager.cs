@@ -16,15 +16,16 @@ public class PointManager : MonoBehaviour
         PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") + 1000);
         Debug.Log(PlayerPrefs.GetInt("Points"));
         PointText.text = $"{PlayerPrefs.GetInt("Points")} Points";
+        Load();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Button1()
     {
+        if (cosmeticOwned.Count == 0)
+        {
+            return;
+        }
+
         if (!cosmeticOwned[0] && PlayerPrefs.GetInt("Points") >= cosmeticCost[0])
         {
             PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") - 1);
@@ -43,7 +44,7 @@ public class PointManager : MonoBehaviour
             Debug.Log("Item2Bought");
         }
     }
-    void Save()
+    public void Save()
     {
         // save comsmetic owned array
         string cosmeticOwnedData = "";
@@ -58,19 +59,21 @@ public class PointManager : MonoBehaviour
                 cosmeticOwnedData += "0";
             }
         }
-
         PlayerPrefs.SetString("ownedCosmetics", cosmeticOwnedData);
     }
     void Load()
     {
+        cosmeticOwned = new List<bool>();
         foreach(char c in PlayerPrefs.GetString("ownedCosmetics"))
         {
-            if (c == 1)
+            if (c == '1')
             {
+                Debug.Log("Loading as TRUE");
                 cosmeticOwned.Add(true);
             }
-            if (c == 0)
+            if (c == '0')
             {
+                Debug.Log("Loading as FALSE");
                 cosmeticOwned.Add(false);
             }
         }
