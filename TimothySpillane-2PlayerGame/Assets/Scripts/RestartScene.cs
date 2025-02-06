@@ -10,7 +10,8 @@ public class RestartScene : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("Points", 0);
-        PlayerPrefs.SetString("ownedCosmetics", "");
+        PlayerPrefs.SetString("ownedCosmetics", "00");
+        PlayerPrefs.SetString("equippedCosmetic", "00");
         SceneManager.LoadScene("Menu");
     }
 

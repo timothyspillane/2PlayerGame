@@ -605,8 +605,14 @@ MonoBehaviour:
   star1: {fileID: 595907328}
   star2: {fileID: 595907327}
   star3: {fileID: 595907326}
+  Player1: {fileID: 1301129356}
+  Player2: {fileID: 1032544212}
   timeUI: {fileID: 67814608}
   timeGoal: 45
+  SunSprite: {fileID: 21300000, guid: 7dbf87b28f4b22646bcf759f131c8899, type: 3}
+  MoonSprite: {fileID: 21300000, guid: e2cf2aad1e4fb084eb3bba51d5b24eca, type: 3}
+  AmericaSprite: {fileID: 21300000, guid: 2ee1add8d71982b4589b5f0151ec012e, type: 3}
+  VaticanSprite: {fileID: 21300000, guid: db95951c76843964488480b67b86d296, type: 3}
 --- !u!4 &300782236
 Transform:
   m_ObjectHideFlags: 0
@@ -1483,6 +1489,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751c6c54c3c7ef2438376c837ddf9f8b, type: 3}
+--- !u!1 &1032544212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7632355904117213625, guid: 751c6c54c3c7ef2438376c837ddf9f8b, type: 3}
+  m_PrefabInstance: {fileID: 1032544211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1144754500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3607394585581487289, guid: 89016065915ee744d98b4207db3b0358, type: 3}
@@ -1675,6 +1686,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+--- !u!1 &1301129356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1513411258439237859, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+  m_PrefabInstance: {fileID: 1301129355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1442260962
 GameObject:
   m_ObjectHideFlags: 0

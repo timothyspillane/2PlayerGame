@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PointText: {fileID: 582469390}
-  cosmeticOwned: 0000
+  cosmeticOwned: 
   cosmeticCost: 0f0000000a000000
 --- !u!4 &1599544771
 Transform:

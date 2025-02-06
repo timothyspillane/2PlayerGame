@@ -855,6 +855,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+--- !u!1 &653184937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1513411258439237859, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+  m_PrefabInstance: {fileID: 653184936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657181729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,8 +2375,14 @@ MonoBehaviour:
   star1: {fileID: 790498807}
   star2: {fileID: 896973050}
   star3: {fileID: 87866}
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
   timeUI: {fileID: 1457756758}
   timeGoal: 60
+  SunSprite: {fileID: 0}
+  MoonSprite: {fileID: 0}
+  AmericaSprite: {fileID: 0}
+  VaticanSprite: {fileID: 0}
 --- !u!4 &1496031482
 Transform:
   m_ObjectHideFlags: 0
@@ -3081,8 +3092,14 @@ MonoBehaviour:
   star1: {fileID: 790498807}
   star2: {fileID: 896973050}
   star3: {fileID: 87866}
+  Player1: {fileID: 653184937}
+  Player2: {fileID: 2021085718}
   timeUI: {fileID: 1457756758}
   timeGoal: 90
+  SunSprite: {fileID: 21300000, guid: 7dbf87b28f4b22646bcf759f131c8899, type: 3}
+  MoonSprite: {fileID: 21300000, guid: e2cf2aad1e4fb084eb3bba51d5b24eca, type: 3}
+  AmericaSprite: {fileID: 21300000, guid: 2ee1add8d71982b4589b5f0151ec012e, type: 3}
+  VaticanSprite: {fileID: 21300000, guid: db95951c76843964488480b67b86d296, type: 3}
 --- !u!4 &1856305389
 Transform:
   m_ObjectHideFlags: 0
@@ -3680,6 +3697,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751c6c54c3c7ef2438376c837ddf9f8b, type: 3}
+--- !u!1 &2021085718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7632355904117213625, guid: 751c6c54c3c7ef2438376c837ddf9f8b, type: 3}
+  m_PrefabInstance: {fileID: 2021085717}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2116518208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1848855981995439055, guid: df58e9f99f09fb842967e5978e1b1a3c, type: 3}

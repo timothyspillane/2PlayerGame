@@ -21,27 +21,36 @@ public class PointManager : MonoBehaviour
 
     public void Button1()
     {
-        if (cosmeticOwned.Count == 0)
+        if (cosmeticOwned[0])
         {
-            return;
+            PlayerPrefs.SetString("equippedCosmetic", "10");
+            Debug.Log("Equipping first cosmetic");
         }
-
         if (!cosmeticOwned[0] && PlayerPrefs.GetInt("Points") >= cosmeticCost[0])
         {
             PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") - 1);
             PointText.text = $"{PlayerPrefs.GetInt("Points")} Points";
-            cosmeticOwned[0] = true ;
+            cosmeticOwned[0] = true;
+            PlayerPrefs.SetString("equippedCosmetic", "01");
             Debug.Log("Item1Bought");
         }
     }
     public void Button2()
     {
+        if (cosmeticOwned[0])
+        {
+            PlayerPrefs.SetString("equippedCosmetic", "01");
+            Debug.Log("Equipping second cosmetic");
+
+        }
         if (!cosmeticOwned[1] && PlayerPrefs.GetInt("Points") >= cosmeticCost[1])
         {
             PlayerPrefs.SetInt("Points", PlayerPrefs.GetInt("Points") - 1);
             PointText.text = $"{PlayerPrefs.GetInt("Points")} Points";
             cosmeticOwned[1] = true;
+            PlayerPrefs.SetString("equippedCosmetic", "01");
             Debug.Log("Item2Bought");
+
         }
     }
     public void Save()
@@ -53,10 +62,12 @@ public class PointManager : MonoBehaviour
             if (owned)
             {
                 cosmeticOwnedData += "1";
+                Debug.Log("saving as true");
             }
             else
             {
                 cosmeticOwnedData += "0";
+                Debug.Log("saving as false");
             }
         }
         PlayerPrefs.SetString("ownedCosmetics", cosmeticOwnedData);

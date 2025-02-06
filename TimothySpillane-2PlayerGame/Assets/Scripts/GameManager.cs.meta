@@ -3,7 +3,19 @@ guid: 41044525d41a7774d90f2d7ec7cc6bf3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - WinPanel: {instanceID: 0}
+  - star1: {instanceID: 0}
+  - star2: {instanceID: 0}
+  - star3: {instanceID: 0}
+  - Player1: {fileID: 1513411258439237859, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+  - Player2: {instanceID: 0}
+  - timeUI: {instanceID: 0}
+  - SunSprite: {instanceID: 0}
+  - MoonSprite: {instanceID: 0}
+  - AmericaSprite: {instanceID: 0}
+  - VaticanSprite: {instanceID: 0}
+  - test: {fileID: 21300000, guid: ec6b42699f4208b49a6c19a8a05925dd, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

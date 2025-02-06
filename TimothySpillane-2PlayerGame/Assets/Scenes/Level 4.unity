@@ -213,8 +213,14 @@ MonoBehaviour:
   star1: {fileID: 955946272}
   star2: {fileID: 1008093596}
   star3: {fileID: 1824069781}
+  Player1: {fileID: 1032544212}
+  Player2: {fileID: 0}
   timeUI: {fileID: 1052044734}
   timeGoal: 20
+  SunSprite: {fileID: 21300000, guid: 7dbf87b28f4b22646bcf759f131c8899, type: 3}
+  MoonSprite: {fileID: 21300000, guid: e2cf2aad1e4fb084eb3bba51d5b24eca, type: 3}
+  AmericaSprite: {fileID: 21300000, guid: 2ee1add8d71982b4589b5f0151ec012e, type: 3}
+  VaticanSprite: {fileID: 21300000, guid: db95951c76843964488480b67b86d296, type: 3}
 --- !u!4 &66781605
 Transform:
   m_ObjectHideFlags: 0

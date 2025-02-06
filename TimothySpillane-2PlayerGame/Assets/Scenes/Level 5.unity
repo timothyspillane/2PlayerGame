@@ -208,8 +208,14 @@ MonoBehaviour:
   star1: {fileID: 2034965715}
   star2: {fileID: 2034965714}
   star3: {fileID: 2034965713}
+  Player1: {fileID: 1301129356}
+  Player2: {fileID: 1032544212}
   timeUI: {fileID: 810964357}
   timeGoal: 30
+  SunSprite: {fileID: 21300000, guid: 7dbf87b28f4b22646bcf759f131c8899, type: 3}
+  MoonSprite: {fileID: 21300000, guid: e2cf2aad1e4fb084eb3bba51d5b24eca, type: 3}
+  AmericaSprite: {fileID: 21300000, guid: 2ee1add8d71982b4589b5f0151ec012e, type: 3}
+  VaticanSprite: {fileID: 21300000, guid: db95951c76843964488480b67b86d296, type: 3}
 --- !u!4 &66781605
 Transform:
   m_ObjectHideFlags: 0
@@ -594,6 +600,10 @@ PrefabInstance:
     - target: {fileID: 3437366695843582114, guid: a6e087cf92d61784585dc389320acb8b, type: 3}
       propertyPath: m_Name
       value: WinScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3437366695843582114, guid: a6e087cf92d61784585dc389320acb8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4877355258349458476, guid: a6e087cf92d61784585dc389320acb8b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1277,6 +1287,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751c6c54c3c7ef2438376c837ddf9f8b, type: 3}
+--- !u!1 &1032544212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7632355904117213625, guid: 751c6c54c3c7ef2438376c837ddf9f8b, type: 3}
+  m_PrefabInstance: {fileID: 1032544211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1051272575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2571230688857056199, guid: 8c8bac0da6fd07544ad7aa8265302cd4, type: 3}
@@ -1507,6 +1522,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+--- !u!1 &1301129356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1513411258439237859, guid: 9df7e258dfa0a4843939c7399f1ce17e, type: 3}
+  m_PrefabInstance: {fileID: 1301129355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1420681901
 GameObject:
   m_ObjectHideFlags: 0
